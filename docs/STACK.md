@@ -32,7 +32,7 @@ Registered sources: `manual`, `telegram`, `share_sheet`, `voice`,
 
 ## Build order (v1)
 
-1. **Capture → enrich → store → resurface** — `ingest` done; enrichment next.
+1. **Capture → enrich → store → resurface** — `ingest` + `enrich` live; enrichment auto-runs every minute via pg_cron. Resurfacing (surfacing rules + briefings) still to come.
 2. Assistant (two-way Telegram + voice).
 3. Projects/clients CRM (migrate 80 clients + 69 projects).
 4. Learning + correlations + briefings.
