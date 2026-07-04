@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #efeee6;
+  --foreground: #22201a;
+  --card: #f7f6f0;
+  --card-foreground: #22201a;
+  --popover: #f7f6f0;
+  --popover-foreground: #22201a;
+  --primary: #5d6e41;
+  --primary-foreground: #f7f6f0;
+  --secondary: #e4e8d6;
+  --secondary-foreground: #43512c;
+  --muted: #e5e2d6;
+  --muted-foreground: #5b5749;
+  --accent: #e4e8d6;
+  --accent-foreground: #43512c;
+  --destructive: #9e5a38;
+  --destructive-foreground: #f7f6f0;
+  --border: #dad6c9;
+  --input: #dad6c9;
+  --ring: #5d6e41;
+  --radius: 0.6rem;
+}
+
+.dark {
+  --background: #16140e;
+  --foreground: #eae6d8;
+  --card: #1e1b14;
+  --card-foreground: #eae6d8;
+  --popover: #1e1b14;
+  --popover-foreground: #eae6d8;
+  --primary: #a6b57c;
+  --primary-foreground: #16140e;
+  --secondary: #262a1a;
+  --secondary-foreground: #bcc998;
+  --muted: #26221a;
+  --muted-foreground: #a29c88;
+  --accent: #262a1a;
+  --accent-foreground: #bcc998;
+  --destructive: #cb8a63;
+  --destructive-foreground: #16140e;
+  --border: #302b20;
+  --input: #302b20;
+  --ring: #a6b57c;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}
