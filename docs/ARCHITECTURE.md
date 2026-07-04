@@ -331,6 +331,6 @@ After the schema exists and is approved, not before. Everything maps onto the ge
 | 3 | Markdown export | `content_md` in Postgres **and** exported as `.md` files to Storage |
 | 4 | Health Android app | Contract designed now; native change-token sync app built at v1 step 5 |
 | 5 | Vectors | None in v1; Postgres full-text only |
-| 6 | Stack | Decided at build start (leaning Next.js + Supabase) |
+| 6 | Stack | Next.js (App Router) + Supabase; Motion + visx for UI; native Kotlin companion for widget + Health Connect; FCM + Web Push. See `docs/STACK.md` |
 
 **v1 build order:** 1) capture → enrich → store → resurface · 2) assistant (two-way Telegram + voice) · 3) projects/clients CRM · 4) learning + correlations + briefings · 5) health + finance ingestion.
